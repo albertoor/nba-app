@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import logo from "./ballon.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -16,46 +17,42 @@ const Sidebar = () => {
 
       <div className="sidebar-options">
         <div className="sidebar-option">
-          <ul className="sidebar-players">
-            <li>
-              <a href="http://">➡️ Get Specific Player</a>
-            </li>
-            <li>
-              <a href="http://">➡️ Get All Players</a>
-            </li>
-          </ul>
+          <div className="sidebar-option-header main-option-header">
+            <h4>Players</h4>
+          </div>
+          <div className="sidebar-option-choose-option">
+            <Link to="/player">➡️ Get Specific Player</Link>
+            <Link to="/players">➡️ Get All Players</Link>
+          </div>
         </div>
 
         <div className="sidebar-option">
-          <ul className="sidebar-teams">
-            <li>
-              <a href="http://">➡️ Get All Teams</a>
-            </li>
-            <li>
-              <a href="http://">➡️ Get a Specific Team</a>
-            </li>
-          </ul>
+          <div className="sidebar-option-header">
+            <h4>Teams</h4>
+          </div>
+          <div className="sidebar-option-choose-option">
+            <Link to="/teams">➡️ Get All Teams</Link>
+            <Link to="/team">➡️ Get a Specific Team</Link>
+          </div>
         </div>
 
         <div className="sidebar-option">
-          <ul className="sidebar-games">
-            <li>
-              <a href="http://">
-                <li>➡️ Get a Specific Game</li>
-              </a>
-            </li>
-            <li>
-              <a href="http://">➡️ Get All Games</a>
-            </li>
-          </ul>
+          <div className="sidebar-option-header">
+            <h4>Games</h4>
+          </div>
+          <div className="sidebar-option-choose-option">
+            <Link to="/game">➡️ Get a Specific Game</Link>
+            <Link to="/games">➡️ Get All Games</Link>
+          </div>
         </div>
 
         <div className="sidebar-option">
-          <ul className="sidebar-stats">
-            <li>
-              <a href="http://">➡️ Get All Stats</a>
-            </li>
-          </ul>
+          <div className="sidebar-option-header">
+            <h4>Stats</h4>
+          </div>
+          <div className="sidebar-option-choose-option">
+            <Link to="/stats">➡️ Get All Stats</Link>
+          </div>
         </div>
       </div>
     </div>

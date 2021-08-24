@@ -1,7 +1,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  max-width: 300px;
 }
 
 .sidebar-welcome {
@@ -10,6 +10,9 @@
   align-items: center;
   flex-direction: column;
   color: #ffff;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
 }
 
 .sidebar > .sidebar-welcome > img {
@@ -30,26 +33,38 @@
 }
 
 .sidebar-options {
-  display: flex;
-  flex-direction: column;
   background-color: #e7e7ea;
+  font-size: 14px;
+  flex: 1;
+  overflow-y: auto;
 }
 
 .sidebar-option {
-  cursor: pointer;
-  height: 80px;
-  border: 1px solid black;
+  height: auto;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
-ul {
-  list-style: none;
+.sidebar-option-header {
+  padding-left: 1rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid #b5c1ca;
+  border-top: 2px solid #b5c1ca;
 }
 
-ul > li {
-  margin-bottom: 1rem;
+.main-option-header {
+  border-top: none;
 }
 
-ul > li > a {
+.sidebar-option-choose-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-option-choose-option > a {
   text-decoration: none;
-  color: black;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #609fd1;
 }
