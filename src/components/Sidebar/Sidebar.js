@@ -14,13 +14,13 @@ const Sidebar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "black" }}>
+      <IconContext.Provider value={{ color: "white" }}>
         <div className="sidebar">
-          <div className="menu-icon" onClick={handleClick}>
-            {showSidebar ? <FaBars /> : <FaTimes />}
+          <div className="sidebar-menu-icon" onClick={handleClick}>
+            {showSidebar ? <FaBars size="30px" /> : <FaTimes size="30px" />}
           </div>
           {showSidebar ? (
-            <h1>Hello</h1>
+            <div className="sidebar-menu-closed"></div>
           ) : (
             <div className="sidebar-menu">
               <div className="sidebar-welcome">
@@ -44,7 +44,6 @@ const Sidebar = () => {
                     <Link to="/players">➡️ Get All Players</Link>
                   </div>
                 </div>
-
                 <div className="sidebar-option">
                   <div className="sidebar-option-header">
                     <h4>Teams</h4>
@@ -54,7 +53,6 @@ const Sidebar = () => {
                     <Link to="/team">➡️ Get a Specific Team</Link>
                   </div>
                 </div>
-
                 <div className="sidebar-option">
                   <div className="sidebar-option-header">
                     <h4>Games</h4>
@@ -64,7 +62,6 @@ const Sidebar = () => {
                     <Link to="/games">➡️ Get All Games</Link>
                   </div>
                 </div>
-
                 <div className="sidebar-option">
                   <div className="sidebar-option-header">
                     <h4>Stats</h4>
