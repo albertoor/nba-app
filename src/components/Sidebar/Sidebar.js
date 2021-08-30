@@ -17,12 +17,18 @@ const Sidebar = () => {
       <IconContext.Provider value={{ color: "white" }}>
         <div className="sidebar">
           <div className="sidebar-menu-icon" onClick={handleClick}>
-            {showSidebar ? <FaBars size="30px" /> : <FaTimes size="30px" />}
+            {showSidebar ? (
+              <FaBars size="30px" style={{ cursor: "pointer" }} />
+            ) : (
+              <FaTimes size="30px" style={{ cursor: "pointer" }} />
+            )}
           </div>
           {showSidebar ? (
             <div className="sidebar-menu-closed"></div>
           ) : (
-            <div className="sidebar-menu">
+            <div
+              className={showSidebar ? "sidebar-menu" : "sidebar-menu active"}
+            >
               <div className="sidebar-welcome">
                 <h3>Welcome to BaMaster Basketball App</h3>
                 <img src={logo} alt="logo" srcset="" />

@@ -9,12 +9,17 @@
   flex-direction: column;
   flex: 1;
   overflow-y: auto;
+  transition: all 1.5s ease;
 }
 
 .sidebar-menu-icon {
   display: flex;
   background-color: #171540;
   padding: 0.5rem;
+}
+
+.close {
+  transition: all 1.5s ease-in;
 }
 
 .sidebar-menu-closed {
