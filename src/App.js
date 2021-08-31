@@ -1,16 +1,18 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
-// import getAllPlayers from "./services/getAllPlayers";
+import Players from "./components/Players/Players";
 
 const App = () => {
-  // console.log(getAllPlayers);
-
   return (
     <Router>
       <div className="container">
         <Sidebar />
+
+        <Switch>
+          <Route path="/players" component={Players} />
+        </Switch>
       </div>
     </Router>
   );
