@@ -1,11 +1,12 @@
 import React from "react";
+import "./Players.css";
 import usePlayers from "../../hooks/usePlayers";
 
 const Players = () => {
   const players = usePlayers();
 
   return (
-    <div>
+    <div className="players-container">
       <table>
         <tr>
           <th>Full Name</th>
