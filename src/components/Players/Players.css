@@ -1,6 +1,13 @@
 .players-container {
   display: flex;
   padding: 3rem 3rem;
+  overflow-y: auto;
+  height: 500px;
+  flex-direction: column;
+}
+
+.players-container > h1 {
+  align-self: center;
 }
 
 th {

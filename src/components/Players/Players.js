@@ -8,6 +8,7 @@ const Players = () => {
 
   return (
     <div className="players-container">
+      <h1>Players</h1>
       <table>
         <tr>
           <th>Full Name</th>
