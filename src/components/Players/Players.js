@@ -1,6 +1,7 @@
 import React from "react";
 import "./Players.css";
 import usePlayers from "../../hooks/usePlayers";
+import renderIcon from "./renderIcon";
 
 const Players = () => {
   const players = usePlayers();
@@ -12,6 +13,7 @@ const Players = () => {
           <th>Full Name</th>
           <th>Position</th>
           <th>Team</th>
+          <th>Icon</th>
         </tr>
         {players.map((player) => (
           <tr>
@@ -20,6 +22,7 @@ const Players = () => {
             </td>
             <td>{player.position}</td>
             <td>{player.team.full_name}</td>
+            <td>{renderIcon(player.team.abbreviation)}</td>
           </tr>
         ))}
       </table>
