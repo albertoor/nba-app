@@ -46,7 +46,6 @@ const Sidebar = () => {
                     <h4>Players</h4>
                   </div>
                   <div className="sidebar-option-choose-option">
-                    <Link to="/random-player">➡️ Get Random Player</Link>
                     <Link to="/players">➡️ Get All Players</Link>
                   </div>
                 </div>
@@ -56,7 +55,6 @@ const Sidebar = () => {
                   </div>
                   <div className="sidebar-option-choose-option">
                     <Link to="/teams">➡️ Get All Teams</Link>
-                    <Link to="/team">➡️ Get a Specific Team</Link>
                   </div>
                 </div>
                 <div className="sidebar-option">
@@ -64,7 +62,6 @@ const Sidebar = () => {
                     <h4>Games</h4>
                   </div>
                   <div className="sidebar-option-choose-option">
-                    <Link to="/game">➡️ Get a Specific Game</Link>
                     <Link to="/games">➡️ Get All Games</Link>
                   </div>
                 </div>
