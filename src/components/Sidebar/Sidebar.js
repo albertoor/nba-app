@@ -46,7 +46,7 @@ const Sidebar = () => {
                     <h4>Players</h4>
                   </div>
                   <div className="sidebar-option-choose-option">
-                    <Link to="/player">➡️ Get Specific Player</Link>
+                    <Link to="/random-player">➡️ Get Random Player</Link>
                     <Link to="/players">➡️ Get All Players</Link>
                   </div>
                 </div>

@@ -1,0 +1,29 @@
+.teams-container {
+  display: flex;
+  padding: 3rem 3rem;
+  overflow-y: auto;
+  height: 500px;
+  flex-direction: column;
+}
+
+.teams-container > h1 {
+  align-self: center;
+}
+
+th {
+  background-color: #171540;
+  color: #ffff;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td {
+  text-align: center;
+}

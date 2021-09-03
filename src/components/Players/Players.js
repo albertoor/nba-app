@@ -1,7 +1,7 @@
 import React from "react";
 import "./Players.css";
 import usePlayers from "../../hooks/usePlayers";
-import renderIcon from "./renderIcon";
+import renderIcon from "../renderIcon";
 
 const Players = () => {
   const players = usePlayers();
