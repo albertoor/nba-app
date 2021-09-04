@@ -65,14 +65,6 @@ const Sidebar = () => {
                     <Link to="/games">➡️ Get All Games</Link>
                   </div>
                 </div>
-                <div className="sidebar-option">
-                  <div className="sidebar-option-header">
-                    <h4>Stats</h4>
-                  </div>
-                  <div className="sidebar-option-choose-option">
-                    <Link to="/stats">➡️ Get All Stats</Link>
-                  </div>
-                </div>
               </div>
             </div>
           )}
