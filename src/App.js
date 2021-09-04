@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Players from "./components/Players/Players";
 import Teams from "./components/Teams/Teams";
+import Games from "./components/Games/Games";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Switch>
           <Route path="/players" component={Players} />
           <Route path="/teams" component={Teams} />
+          <Route path="/games" component={Games} />
         </Switch>
       </div>
     </Router>

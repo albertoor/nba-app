@@ -1,5 +1,5 @@
 const getAllPlayersUrl = "https://free-nba.p.rapidapi.com/players";
 const getAllTeamsUrl = "https://free-nba.p.rapidapi.com/teams";
-const getAllStats = "https://free-nba.p.rapidapi.com/stats";
+const getAllGamesUrl = "https://free-nba.p.rapidapi.com/games";
 
-export { getAllPlayersUrl, getAllTeamsUrl, getAllStats };
+export { getAllPlayersUrl, getAllTeamsUrl, getAllGamesUrl };

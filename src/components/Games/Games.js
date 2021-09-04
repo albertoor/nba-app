@@ -1,9 +1,18 @@
 import React from "react";
+import useGames from "../../hooks/useGames";
 
 const Games = () => {
+  const games = useGames();
+
   return (
     <div>
-      <h1>Games</h1>
+      {games.map((game) => (
+        <div className="game-container">
+          <h1>
+            {game.home_team.abbreviation} vs {game.visitor_team.abbreviation}
+          </h1>
+        </div>
+      ))}
     </div>
   );
 };
