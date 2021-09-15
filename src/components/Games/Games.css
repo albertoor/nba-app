@@ -66,3 +66,21 @@
 .versus > h1 {
   color: gray;
 }
+
+@media (max-width: 600px) {
+  .date {
+    align-self: center;
+  }
+  .home-team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .visitor-team {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: flex-start;
+  }
+}
