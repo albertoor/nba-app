@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Teams.css";
 import useTeams from "../../hooks/useTeams";
 import renderIcon from "../renderIcon";
-import Loader from "react-loader-spinner";
 
 const Teams = () => {
   const teams = useTeams();
