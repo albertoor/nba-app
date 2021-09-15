@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import useGames from "../../hooks/useGames";
 import "./Games.css";
 import renderIcon from "../renderIcon";
 import Moment from "react-moment";
+import Loader from "react-loader-spinner";
 
 const Games = () => {
   const games = useGames();

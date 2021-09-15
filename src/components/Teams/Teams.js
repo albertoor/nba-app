@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Teams.css";
 import useTeams from "../../hooks/useTeams";
 import renderIcon from "../renderIcon";
+import Loader from "react-loader-spinner";
 
 const Teams = () => {
   const teams = useTeams();
@@ -19,8 +20,8 @@ const Teams = () => {
           <th>Name</th>
           <th>Abbreviation</th>
         </tr>
-        {teams.map((team) => (
-          <tr>
+        {teams.map((team, key) => (
+          <tr key={key}>
             <td>{team.abbreviation} </td>
             <td>{team.city}</td>
             <td>{team.conference}</td>

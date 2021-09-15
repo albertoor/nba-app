@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Players.css";
 import usePlayers from "../../hooks/usePlayers";
 import renderIcon from "../renderIcon";
+import Loader from "react-loader-spinner";
 
 const Players = () => {
   const players = usePlayers();

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Sidebar from "./components/Sidebar/Sidebar";
+import NavBar from "./components/NavBar/NavBar";
 import Players from "./components/Players/Players";
 import Teams from "./components/Teams/Teams";
 import Games from "./components/Games/Games";
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Router>
       <div className="container">
-        <Sidebar />
+        <NavBar />
 
         <Switch>
           <Route path="/players" component={Players} />

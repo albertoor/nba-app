@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #171540;
+  color: #ffff;
+}
+
+.navbar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-header > img {
+  width: 80px;
+}
+
+.navbar-header > figcaption > a {
+  color: #ffff;
+}
+
+.navbar-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.navbar-option {
+  display: flex;
+}
+
+.navbar-option-choose-option > a {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: #ffff;
+}
